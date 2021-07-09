@@ -1,0 +1,154 @@
+<html>
+    <style>
+        .container {
+            
+  border-radius: 5px; 
+  padding: 100px;
+  position: relative;
+  align-content: center;
+}
+.container::after{
+    content:"";
+  background-image: url("learn.jpeg");
+  opacity:0.4;
+  position:absolute;
+  top: -2px;
+  bottom: 5px;
+  right:0;
+  left:0;
+  z-index:-3;
+  width:100%;
+  height: 100%;
+  background-size:cover;
+  background-position: center;
+  background-repeat: space;
+  background-attachment: fixed;
+  
+}
+
+input[type=text], input[type=number],input[type=password],input[type=file],input[type=date],select,textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 50px;
+  display: inline-block;
+  padding-left: 4rem;
+  border: 3.5px;
+  border-style:outset;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+
+}
+/*
+input [type=radio],[type=checkbox]{
+    width:100%;
+    
+    max-width: 260px;
+    padding:50px 2px;
+    display:inline-block;
+}*/
+
+input[type=submit] {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  padding: 14px 20px;
+  align-content: center;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: orange;
+}
+    </style>
+<body>
+
+
+<div class="container">
+    <h2 style=" width:89rem;float: centre;padding-left: 12rem;color: orange;">JOB APPLICATION FORM</h2>
+   
+    
+<form>
+   <label for="firstname" style="padding-right: 3.8rem;">First name:</label>
+   <INPUT TYPE="TEXT" NAME="FNAME" required maxlength="50" style="width:100%;max-width: 260px"><BR>
+
+    <label for="LASTNAME" style="padding-right: 3.8rem;">Last name:</label>
+    <INPUT TYPE="TEXT" NAME="LNAME" ID="LNAME" maxlength="50" style="width:100%;max-width: 260px"><BR>
+
+        <label for="gender">Gender:</label><br><br>
+        <input type="radio" id="female" name="gender" value="female" >
+        <label for="html" >Female</label>
+        <input type="radio" id="Male" name="gender" value="male">
+        <label for="">Male</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="">Other</label><br>
+
+
+
+        <label for="fathersname" style="padding-right: 2.5rem;">Father's name:</label>
+    <INPUT TYPE="text" NAME="fathersname" ID="fathersname" maxlength="50" style="width:100%;max-width: 260px"><BR>
+
+        <label for="email" style="padding-right: 5.5rem">Email:</label>
+        <input type="text" name="email" id="email" required maxlength="50" style="width:100%;max-width: 260px"><br>
+
+        <label for="pass" style="padding-right: 4rem">Password:</label>
+        <input type="password" name="pass" id="pass" required maxlength="50" style="width:100%;max-width: 260px"><br>
+
+    <label for="contactno" style="padding-right: 5.5rem">Phone:</label>
+    <INPUT TYPE="NUMBER" NAME="PNO" ID="PNO" required maxlength="50" style="width:100%;max-width: 260px"><BR>
+
+        <label for="address" style="padding-right: 4.5rem">Address:</label>
+        <input type="text" name="Address" id="Address" maxlength="50" style="width:100%;max-width: 260px"><br>
+
+        <label for="country"style="padding-right: 5rem">Country</label>
+    <select id="country" name="country"maxlength="50" style="width:100%;max-width: 260px">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+        <h3>Position</h3>
+  <label for="skills"style="padding-right: 0.5rem">Skills:</label><br><br>
+  <input type="checkbox" id="html" name="language1" value="HTML"style="padding-left:4rem">
+  <label for="html">HTML</label><br>
+  <input type="checkbox" id="css" name="language2" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="checkbox" id="javascript" name="language3" value="JavaScript">
+  <label for="javascript">JavaScript</label><br><br>
+
+        <label for="position"style="padding-right: 2 rem">Position you're applying for</label>
+        <input type="text" id="position" nam="position" required style="width:100%;max-width: 260px"><br>
+
+         <label for="Resume"style="padding-right: 4.5rem">Resume upload</label>
+         <input type="file" id="resume" name="resume" required style="width:100%;max-width: 260px"><br> 
+
+         <label for="pos"style="padding-right: 4rem">Portfolio website</label>
+        <input type="text" id="por" nam="por"style="width:100%;max-width: 260px"><br>
+
+        <label for="sal"style="padding-right: 2.5rem">Salary requirements:</label>
+        <input type="text" id="sal" nam="sal"style="width:100%;max-width: 260px"><br>
+
+        <label for="join"style="padding-right: 2.5rem">When can you start?</label>
+        <input type="date" id="join" name="join"style="width:100%;max-width: 260px"><br>
+
+        <label for="rel"style="padding-right: 2.5rem">Are you willing to reallocate?</label><br>
+        <input type="radio" id="yes" name="willing" value="yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="willing" value="no">
+        <label for="no">No</label><br>
+        <input type="radio" id="Notsure" name="willing" value="Not sure">
+        <label for="not">Not sure</label><br><br>
+
+        <label for="Comments"style="padding-right: 5.5rem">Comments</label><br>
+        <textarea name="message" rows="10" cols="30"style="width:100%;max-width: 660px">
+            </textarea><br>
+            <input type="submit" value="Submit"style="width:100%;max-width: 600px">
+
+</form>
+</div>
+</BODY>
+</html>
